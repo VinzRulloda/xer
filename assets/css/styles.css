@@ -102,3 +102,72 @@ button:hover {
         width: 90%;
     }
 }
+
+/* home.html */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(168, 30, 30);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    height: 40px;
+}
+
+.navbar .logout-button {
+    background-color: white;
+    color: rgb(168, 30, 30);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    gap: 10px; 
+}
+
+.side-container {
+    background-color: rgb(168, 30, 30);
+    color: white;
+    padding: 10px;
+    width: 200px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.side-container button {
+    background-color: white;
+    color: rgb(168, 30, 30);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.main-container {
+    flex-grow: 1; 
+    position: relative;
+}
+
+.main-container img {
+    width: 100%;
+    height: auto;
+}
+
+.draggable {
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    padding: 5px;
+    cursor: move;
+}
