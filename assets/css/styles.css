@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgb(168, 30, 30), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+Title {
+    font-weight: 500;
+    color: rgb(51, 50, 50);
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: rgb(51, 50, 50) ;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 8px;
+    font-size: 16px;
+    color: rgb(51, 50, 50);
+    background-color: white;
+    transition: border  0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+button {
+    padding: 14px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #504ac2;
+    transform: translateY(-2px);
+}
+
+.register-link {
+    color: rgb(50, 50, 224);
+    text-decoration: underline;
+    margin-left: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register-link:hover {
+    text-decoration: none;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px 30px;
+        width: 90%;
+    }
+}
