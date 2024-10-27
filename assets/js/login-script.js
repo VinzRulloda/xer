@@ -15,6 +15,9 @@ function login() {
         if (data.success) {
             message.style.color = 'green';
             message.innerText = 'Login successful!';
+
+            localStorage.setItem('loggedIn', 'true');
+            
             setTimeout(() => {
                 window.location.href ='views/home.html';
             }, 3000);
